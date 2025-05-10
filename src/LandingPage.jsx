@@ -22,7 +22,8 @@ export default function LandingPage() {
           {...fadeInUp}
           className="text-xl max-w-2xl text-gray-700 mb-8"
         >
-          Your gamified financial buddy that makes money management fun, smart, and super Gen Z-friendly.
+          Your gamified financial buddy that makes money management fun, smart,
+          and super Gen Z-friendly.
         </motion.p>
         <motion.img
           {...fadeInUp}
@@ -35,9 +36,12 @@ export default function LandingPage() {
       {/* Problem */}
       <section className="py-20 px-6 bg-white">
         <motion.div {...fadeInUp} className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-indigo-700 mb-4">The Problem</h2>
+          <h2 className="text-3xl font-bold text-indigo-700 mb-4">
+            The Problem
+          </h2>
           <p className="text-lg text-gray-600">
-            80% of students feel anxious about money. Budgeting apps are boring, complex, or hard to stick to.
+            80% of students feel anxious about money. Budgeting apps are boring,
+            complex, or hard to stick to.
           </p>
         </motion.div>
       </section>
@@ -45,18 +49,27 @@ export default function LandingPage() {
       {/* Solution */}
       <section className="py-20 px-6 bg-purple-50">
         <motion.div {...fadeInUp} className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-purple-700 mb-4">Our Solution</h2>
+          <h2 className="text-3xl font-bold text-purple-700 mb-4">
+            Our Solution
+          </h2>
           <p className="text-lg text-gray-700 mb-6">
-            Pomiya transforms personal finance into a fun quest-based adventure. Grow your kawaii pet by completing real financial tasks.
+            Pomiya transforms personal finance into a fun quest-based adventure.
+            Grow your kawaii pet by completing real financial tasks.
           </p>
-          <img src="/level1.png" alt="Pomiya Illustration" className="w-48 mx-auto" />
+          <img
+            src="/level1.png"
+            alt="Pomiya Illustration"
+            className="w-48 mx-auto"
+          />
         </motion.div>
       </section>
 
       {/* How it works */}
       <section className="py-20 px-6 bg-white">
         <motion.div {...fadeInUp} className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-indigo-700 text-center mb-10">How It Works</h2>
+          <h2 className="text-3xl font-bold text-indigo-700 text-center mb-10">
+            How It Works
+          </h2>
           <div className="grid md:grid-cols-4 gap-6 text-center text-gray-700">
             <motion.div {...fadeInUp}>
               <div className="text-4xl">📱</div>
@@ -81,7 +94,9 @@ export default function LandingPage() {
       {/* Value */}
       <section className="py-20 px-6 bg-purple-100">
         <motion.div {...fadeInUp} className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-purple-800 mb-4">Why It Works</h2>
+          <h2 className="text-3xl font-bold text-purple-800 mb-4">
+            Why It Works
+          </h2>
           <div className="flex flex-wrap justify-center gap-8 text-lg text-gray-700">
             <div>🎮 Gamified Learning</div>
             <div>🔗 Web3 Wallet (Solana)</div>
@@ -93,9 +108,17 @@ export default function LandingPage() {
       {/* CTA */}
       <section className="py-20 px-6 bg-white">
         <motion.div {...fadeInUp} className="text-center max-w-xl mx-auto">
-          <h2 className="text-3xl font-bold text-indigo-700 mb-4">Ready to raise your Finagotchi?</h2>
-          <p className="text-lg text-gray-700 mb-6">Join our beta now and start your financial adventure.</p>
-          <form action="http://localhost:3001/subscribe" method="POST" className="flex flex-col sm:flex-row justify-center items-center gap-3">
+          <h2 className="text-3xl font-bold text-indigo-700 mb-4">
+            Ready to raise your Finagotchi?
+          </h2>
+          <p className="text-lg text-gray-700 mb-6">
+            Join our beta now and start your financial adventure.
+          </p>
+          <form
+            action="https://finagotchi-backend.onrender.com/subscribe"
+            method="POST"
+            className="flex flex-col sm:flex-row justify-center items-center gap-3"
+          >
             <input
               type="email"
               name="email"
