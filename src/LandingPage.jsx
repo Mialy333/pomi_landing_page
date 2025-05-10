@@ -30,7 +30,7 @@ export default function LandingPage() {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
           },
-          body: new URLSearchParams({ cleanedEmail }),
+          body: new URLSearchParams({ email: cleanedEmail }),
         }
       );
 
