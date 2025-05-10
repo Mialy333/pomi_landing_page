@@ -115,7 +115,7 @@ export default function LandingPage() {
             Join our beta now and start your financial adventure.
           </p>
           <form
-            action="https://finagotchi-backend.onrender.com/subscribe"
+            action="https://pomi-landing-page-server.onrender.com"
             method="POST"
             className="flex flex-col sm:flex-row justify-center items-center gap-3"
           >
