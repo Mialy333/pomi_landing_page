@@ -14,8 +14,10 @@ export default function LandingPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const cleanedEmail = email.trim();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
+
+    if (!emailRegex.test(cleanedEmail)) {
       alert("Please enter a valid email address.");
       return;
     }
@@ -28,7 +30,7 @@ export default function LandingPage() {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
           },
-          body: new URLSearchParams({ email }),
+          body: new URLSearchParams({ cleanedEmail }),
         }
       );
 
