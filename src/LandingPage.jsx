@@ -116,7 +116,7 @@ export default function LandingPage() {
           </p>
           <form
             action="https://pomi-landing-page-server.onrender.com"
-            method="GET"
+            method="POST"
             className="flex flex-col sm:flex-row justify-center items-center gap-3"
           >
             <input
