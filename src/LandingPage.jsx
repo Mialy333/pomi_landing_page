@@ -60,7 +60,6 @@ export default function LandingPage() {
       <nav className="py-6 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <img src="/logo.png" alt="MoneyPet" className="h-10" />
             <span className="text-xl font-bold text-purple-600">Pomi</span>
           </div>
           <a
@@ -92,15 +91,10 @@ export default function LandingPage() {
           className="relative w-64 h-64 md:w-80 md:h-80"
         >
           <img
-            src="/pet-evolution.gif"
-            alt="MoneyPet Evolution"
+            src="/logo.png"
+            alt="Pomi"
             className="w-full h-full object-contain"
           />
-          <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded-full shadow-lg border border-purple-200">
-            <span className="text-purple-600 font-medium">
-              Your financial buddy
-            </span>
-          </div>
         </motion.div>
 
         <motion.div {...fadeInUp} className="mt-12">
@@ -238,11 +232,7 @@ export default function LandingPage() {
             </div>
 
             <div className="relative">
-              <img
-                src="/app-screenshot.png"
-                alt="MoneyPet App"
-                className="rounded-xl shadow-xl border-8 border-white"
-              />
+              <img src="/logo2.png" alt="MoneyPetApp" />
               <div className="absolute -bottom-6 -right-6 bg-white px-4 py-2 rounded-lg shadow-md border border-purple-200">
                 <span className="text-purple-600 font-medium">
                   Try the demo →
@@ -458,12 +448,41 @@ export default function LandingPage() {
                   required
                   className="p-4 rounded-xl w-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-300"
                 />
-                <button
+                <motion.button
                   type="submit"
-                  className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold transition w-full sm:w-auto"
+                  className="relative overflow-hidden bg-yellow-300 text-purple-600 hover:text-purple-700 px-6 py-3 rounded-lg font-bold w-full sm:w-auto shadow-md hover:shadow-lg transition-all duration-200 border border-yellow-300 min-w-[180px]"
+                  whileHover={{
+                    scale: 1.03,
+                    boxShadow: "0 4px 12px -2px rgba(124, 58, 237, 0.3)",
+                  }}
+                  whileTap={{
+                    scale: 0.98,
+                  }}
                 >
-                  🚀 Join Beta Waitlist
-                </button>
+                  <div className="relative z-10 flex items-center justify-center gap-2">
+                    <motion.span
+                      animate={{
+                        x: [0, 2, 0],
+                      }}
+                      transition={{
+                        duration: 1.5,
+                        repeat: Infinity,
+                      }}
+                    >
+                      🚀
+                    </motion.span>
+                    <span>Join Beta</span>
+                  </div>
+
+                  {/* Effet de fond animé */}
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-purple-50/50 to-white/0 opacity-0"
+                    whileHover={{
+                      opacity: 1,
+                    }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </motion.button>
               </motion.form>
             ) : (
               <motion.div
