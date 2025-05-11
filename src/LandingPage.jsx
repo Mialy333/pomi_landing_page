@@ -83,7 +83,7 @@ export default function LandingPage() {
           {...fadeInUp}
           className="text-xl md:text-2xl max-w-3xl text-gray-700 mb-8"
         >
-          The pet companion that transforms your real finances into a playful
+          The companion that transforms your real finances into a playful
           adventure
         </motion.p>
         <motion.div
@@ -175,7 +175,7 @@ export default function LandingPage() {
         <motion.div {...fadeInUp} className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-purple-700 mb-4">
-              Meet Your Financial Pet companion
+              Meet Your Financial Pet Companion
             </h2>
             <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto">
               Pomi turns real financial habits into a delightful game with
@@ -194,23 +194,21 @@ export default function LandingPage() {
                     Start with Your Pet Egg
                   </h3>
                   <p className="text-gray-600">
-                    Connect your bank (or start manually) to hatch your unique
-                    companion
+                    Enter your budget to hatch your unique companion
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="bg-white p-3 rounded-lg shadow-sm">
-                  <span className="text-2xl">📊</span>
+                  <span className="text-2xl">❤️‍🔥</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-purple-700 mb-2">
                     Real-Time Reactions
                   </h3>
                   <p className="text-gray-600">
-                    Your pet gets happy when you save, sick when you overspend
-                    on Uber Eats
+                    Pomi gets 😊 when you save but 🤢 when you overspend
                   </p>
                 </div>
               </div>
@@ -231,12 +229,37 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div className="relative">
-              <img src="/logo2.png" alt="MoneyPetApp" />
-              <div className="absolute -bottom-6 -right-6 bg-white px-4 py-2 rounded-lg shadow-md border border-purple-200">
-                <span className="text-purple-600 font-medium">
-                  Try the demo →
-                </span>
+            <div className="relative group">
+              {/* Logo principal avec légère animation au survol */}
+              <img src="/logo2.png" alt="Pomi App Screenshot" />
+
+              {/* Conteneur QR Code + CTA */}
+              <div className="absolute -bottom-4 -right-4 flex flex-col items-end gap-3">
+                {/* QR Code avec tooltip */}
+                <div className="relative">
+                  <div className="bg-white p-2 rounded-lg shadow-md border border-purple-100 transform transition-all duration-300 group-hover:scale-105">
+                    <img
+                      src="/QRcode.png"
+                      alt="Scan for demo"
+                      className="w-20 h-20"
+                    />
+                  </div>
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                    Scan to try demo
+                  </div>
+                </div>
+
+                {/* Bouton CTA animé */}
+                <motion.a
+                  href="#demo"
+                  className="bg-white px-4 py-2 rounded-lg shadow-md border border-purple-200 hover:shadow-lg transition-all flex items-center gap-1"
+                  whileHover={{ x: 2 }}
+                >
+                  <span className="text-purple-600 font-medium">
+                    Scan the demo
+                  </span>
+                  <span className="transition-transform group-hover:translate-x-1"></span>
+                </motion.a>
               </div>
             </div>
           </div>
@@ -260,8 +283,7 @@ export default function LandingPage() {
                 Connect & Hatch
               </h3>
               <p className="text-gray-600">
-                Link your bank (or start manually) to hatch your unique
-                companion NFT
+                Enter your budget to hatch your unique companion NFT
               </p>
             </motion.div>
 
@@ -293,37 +315,70 @@ export default function LandingPage() {
           <div className="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl p-8 text-white">
             <div className="max-w-4xl mx-auto">
               <h3 className="text-2xl font-bold mb-4">
-                Web3 & AI Meet Financial Education
+                Next-Gen Financial Companion
               </h3>
               <p className="text-lg mb-6">
-                Your pet companion is an evolving NFT that proves your financial
-                skills on-chain
+                Powered by{" "}
+                <span className="font-semibold">Blockchain Proof</span> +{" "}
+                <span className="font-semibold">AI Coaching</span> - Your pet
+                evolves as you master real money skills
               </p>
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="flex items-center space-x-3">
-                  <span className="bg-white bg-opacity-20 p-2 rounded-lg">
-                    🔗
-                  </span>
-                  <span>Own your financial identity</span>
+
+              <div className="grid sm:grid-cols-2 gap-6">
+                {/* Colonne Web3 */}
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div>
+                      <h4 className="font-semibold">Web3 Superpowers</h4>
+                      <ul className="mt-2 space-y-3 text-sm">
+                        <li className="flex items-center space-x-2">
+                          <span>•</span>
+                          <span>Evolvable NFT companion</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <span>•</span>
+                          <span>Tokenized achievements (POAPs)</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <span>•</span>
+                          <span>Scholarship income opportunities</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <span className="bg-white bg-opacity-20 p-2 rounded-lg">
-                    🎁
-                  </span>
-                  <span>Redeem badges for real rewards</span>
+
+                {/* Colonne IA */}
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div>
+                      <h4 className="font-semibold">AI Coach</h4>
+                      <ul className="mt-2 space-y-3 text-sm">
+                        <li className="flex items-center space-x-2">
+                          <span>•</span>
+                          <span>Adaptive quests based on your habits</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <span>•</span>
+                          <span>Personalized mini-goals</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <span>•</span>
+                          <span>Real-time encouragement</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <span className="bg-white bg-opacity-20 p-2 rounded-lg">
-                    👥
-                  </span>
-                  <span>Mentor others & earn (scholarship model)</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <span className="bg-white bg-opacity-20 p-2 rounded-lg">
-                    📜
-                  </span>
-                  <span>POAP badges for achievements</span>
-                </div>
+              </div>
+
+              {/* CTA unifié */}
+              <div className="mt-8 text-center">
+                <p className="text-purple-100 text-sm font-medium">
+                  The perfect blend of{" "}
+                  <span className="text-white">ownership</span> (Web3) and{" "}
+                  <span className="text-white">personalization</span> (AI)
+                </p>
               </div>
             </div>
           </div>
@@ -337,25 +392,35 @@ export default function LandingPage() {
             Our Journey So Far
           </h2>
 
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <div className="text-4xl font-bold text-purple-600 mb-2">50+</div>
-              <p className="text-gray-700">Beta Testers</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <div className="text-4xl font-bold text-purple-600 mb-2">
-                2.5x
-              </div>
-              <p className="text-gray-700">More Engagement</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+          <div className="flex flex-col items-center md:flex-row md:justify-center gap-8">
+            {/* Bloc 1 - Award */}
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-white p-6 rounded-xl shadow-sm w-full max-w-xs text-center"
+            >
+              <div className="text-4xl font-bold text-purple-600 mb-2">🏆</div>
+              <p className="text-gray-700">
+                Award-Winning from XRPL Commons Aquarium Residency Program
+              </p>
+            </motion.div>
+
+            {/* Bloc 2 - University */}
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-white p-6 rounded-xl shadow-sm w-full max-w-xs text-center"
+            >
               <div className="text-4xl font-bold text-purple-600 mb-2">3</div>
               <p className="text-gray-700">University Pilots</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <div className="text-4xl font-bold text-purple-600 mb-2">1</div>
-              <p className="text-gray-700">Award-Winning Foundation</p>
-            </div>
+            </motion.div>
+
+            {/* Bloc 3 - Beta */}
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-white p-6 rounded-xl shadow-sm w-full max-w-xs text-center"
+            >
+              <div className="text-4xl font-bold text-purple-600 mb-2">50k</div>
+              <p className="text-gray-700">Beta Testers</p>
+            </motion.div>
           </div>
         </motion.div>
       </section>
@@ -389,7 +454,7 @@ export default function LandingPage() {
                   <h3 className="text-xl font-semibold text-indigo-700 mb-2">
                     Q4 2025
                   </h3>
-                  <p className="text-gray-600">NFT Pets + $MONEY Token</p>
+                  <p className="text-gray-600">NFT Pets</p>
                 </div>
               </div>
 
@@ -508,7 +573,7 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-6 md:mb-0">
-              <img src="/logo-white.png" alt="MoneyPet" className="h-8" />
+              <img src="/logo.png" alt="MoneyPet" className="h-8" />
               <span className="text-white font-bold">Pomi</span>
             </div>
 
