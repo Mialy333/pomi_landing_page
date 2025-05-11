@@ -245,7 +245,14 @@ export default function LandingPage() {
                     />
                   </div>
                   <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                    Scan to try demo
+                    <a
+                      href="https://pomi-topaz.vercel.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline hover:text-purple-200 transition-colors"
+                    >
+                      Scan to try demo
+                    </a>
                   </div>
                 </div>
 
