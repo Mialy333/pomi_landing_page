@@ -61,7 +61,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <img src="/logo.png" alt="MoneyPet" className="h-10" />
-            <span className="text-xl font-bold text-purple-600">MoneyPet</span>
+            <span className="text-xl font-bold text-purple-600">Pomi</span>
           </div>
           <a
             href="#beta"
@@ -78,13 +78,13 @@ export default function LandingPage() {
           {...fadeInUp}
           className="text-5xl md:text-6xl font-bold text-indigo-700 mb-4"
         >
-          Meet <span className="text-purple-600">MoneyPet</span> 🐉
+          Meet <span className="text-purple-600">Pomi</span>
         </motion.h1>
         <motion.p
           {...fadeInUp}
           className="text-xl md:text-2xl max-w-3xl text-gray-700 mb-8"
         >
-          The Tamagotchi that transforms your real finances into a playful
+          The pet companion that transforms your real finances into a playful
           adventure
         </motion.p>
         <motion.div
@@ -181,10 +181,10 @@ export default function LandingPage() {
         <motion.div {...fadeInUp} className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-purple-700 mb-4">
-              Meet Your Financial Tamagotchi
+              Meet Your Financial Pet companion
             </h2>
             <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto">
-              MoneyPet turns real financial habits into a delightful game with
+              Pomi turns real financial habits into a delightful game with
               evolving NFT companions
             </p>
           </div>
@@ -201,7 +201,7 @@ export default function LandingPage() {
                   </h3>
                   <p className="text-gray-600">
                     Connect your bank (or start manually) to hatch your unique
-                    MoneyPet
+                    companion
                   </p>
                 </div>
               </div>
@@ -257,7 +257,7 @@ export default function LandingPage() {
       <section className="py-20 px-6 bg-white" id="how-it-works">
         <motion.div {...fadeInUp} className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-indigo-700 text-center mb-16">
-            How MoneyPet Works
+            How Pomi Works
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -270,8 +270,8 @@ export default function LandingPage() {
                 Connect & Hatch
               </h3>
               <p className="text-gray-600">
-                Link your bank (or start manually) to hatch your unique MoneyPet
-                NFT
+                Link your bank (or start manually) to hatch your unique
+                companion NFT
               </p>
             </motion.div>
 
@@ -296,19 +296,17 @@ export default function LandingPage() {
               <h3 className="text-xl font-semibold text-indigo-700 mb-3">
                 Evolve & Earn
               </h3>
-              <p className="text-gray-600">
-                Grow your pet and earn $MONEY tokens for real rewards
-              </p>
+              <p className="text-gray-600">Grow your pet and earn rewards</p>
             </motion.div>
           </div>
 
           <div className="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl p-8 text-white">
             <div className="max-w-4xl mx-auto">
               <h3 className="text-2xl font-bold mb-4">
-                Web3 Meets Financial Education
+                Web3 & AI Meet Financial Education
               </h3>
               <p className="text-lg mb-6">
-                Your MoneyPet is an evolving NFT that proves your financial
+                Your pet companion is an evolving NFT that proves your financial
                 skills on-chain
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
@@ -322,7 +320,7 @@ export default function LandingPage() {
                   <span className="bg-white bg-opacity-20 p-2 rounded-lg">
                     🎁
                   </span>
-                  <span>Redeem tokens for real rewards</span>
+                  <span>Redeem badges for real rewards</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="bg-white bg-opacity-20 p-2 rounded-lg">
@@ -388,7 +386,7 @@ export default function LandingPage() {
               <div className="relative md:grid md:grid-cols-2 gap-8">
                 <div className="md:text-right md:pr-8">
                   <h3 className="text-xl font-semibold text-purple-700 mb-2">
-                    Q3 2024
+                    Q3 2025
                   </h3>
                   <p className="text-gray-600">Closed Beta Launch</p>
                 </div>
@@ -399,7 +397,7 @@ export default function LandingPage() {
                 <div className="hidden md:block"></div>
                 <div className="md:text-left md:pl-8">
                   <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                    Q4 2024
+                    Q4 2025
                   </h3>
                   <p className="text-gray-600">NFT Pets + $MONEY Token</p>
                 </div>
@@ -408,7 +406,7 @@ export default function LandingPage() {
               <div className="relative md:grid md:grid-cols-2 gap-8">
                 <div className="md:text-right md:pr-8">
                   <h3 className="text-xl font-semibold text-purple-700 mb-2">
-                    Q1 2025
+                    Q1 2026
                   </h3>
                   <p className="text-gray-600">Open Banking Integration</p>
                 </div>
@@ -419,7 +417,7 @@ export default function LandingPage() {
                 <div className="hidden md:block"></div>
                 <div className="md:text-left md:pl-8">
                   <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                    Q2 2025
+                    Q2 2026
                   </h3>
                   <p className="text-gray-600">Scholarship Program Launch</p>
                 </div>
@@ -439,7 +437,7 @@ export default function LandingPage() {
             Ready to Transform Your Financial Life?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join our beta and be among the first to raise your MoneyPet
+            Join our beta and be among the first to raise your companion
           </p>
 
           <AnimatePresence>
@@ -492,7 +490,7 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-6 md:mb-0">
               <img src="/logo-white.png" alt="MoneyPet" className="h-8" />
-              <span className="text-white font-bold">MoneyPet</span>
+              <span className="text-white font-bold">Pomi</span>
             </div>
 
             <div className="flex space-x-6">
@@ -512,7 +510,7 @@ export default function LandingPage() {
           </div>
 
           <div className="mt-8 pt-8 border-t border-gray-800 text-sm text-center">
-            © {new Date().getFullYear()} MoneyPet. Making finance fun for Gen-Z.
+            © {new Date().getFullYear()} Pomi. Making finance fun for Gen-Z.
           </div>
         </div>
       </footer>
