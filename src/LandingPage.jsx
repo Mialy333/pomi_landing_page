@@ -244,16 +244,6 @@ export default function LandingPage() {
                       className="w-20 h-20"
                     />
                   </div>
-                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                    <a
-                      href="https://pomi-topaz.vercel.app"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline hover:text-purple-200 transition-colors"
-                    >
-                      Scan to try demo
-                    </a>
-                  </div>
                 </div>
 
                 {/* Bouton CTA animé */}
@@ -263,7 +253,14 @@ export default function LandingPage() {
                   whileHover={{ x: 2 }}
                 >
                   <span className="text-purple-600 font-medium">
-                    Scan the demo
+                    <a
+                      href="https://pomi-topaz.vercel.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-black text-xs px-2 py-1  group-hover:opacity-100 transition-opacity whitespace-nowrap hover:underline hover:text-purple-200 block"
+                    >
+                      Scan the QR code or click here for the demo
+                    </a>
                   </span>
                   <span className="transition-transform group-hover:translate-x-1"></span>
                 </motion.a>
@@ -407,7 +404,8 @@ export default function LandingPage() {
             >
               <div className="text-4xl font-bold text-purple-600 mb-2">🏆</div>
               <p className="text-gray-700">
-                Award-Winning from XRPL Commons Aquarium Residency Program
+                Jury's Prize Awards from XRPL Commons Residency Demo Day (April
+                2025)
               </p>
             </motion.div>
 
@@ -428,63 +426,6 @@ export default function LandingPage() {
               <div className="text-4xl font-bold text-purple-600 mb-2">50k</div>
               <p className="text-gray-700">Beta Testers</p>
             </motion.div>
-          </div>
-        </motion.div>
-      </section>
-
-      {/* Roadmap */}
-      <section className="py-20 px-6 bg-white">
-        <motion.div {...fadeInUp} className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-indigo-700 text-center mb-16">
-            Our Roadmap
-          </h2>
-
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="hidden md:block absolute left-1/2 h-full w-1 bg-gradient-to-b from-purple-400 to-indigo-600"></div>
-
-            {/* Timeline items */}
-            <div className="space-y-12">
-              <div className="relative md:grid md:grid-cols-2 gap-8">
-                <div className="md:text-right md:pr-8">
-                  <h3 className="text-xl font-semibold text-purple-700 mb-2">
-                    Q3 2025
-                  </h3>
-                  <p className="text-gray-600">Closed Beta Launch</p>
-                </div>
-                <div className="hidden md:block"></div>
-              </div>
-
-              <div className="relative md:grid md:grid-cols-2 gap-8">
-                <div className="hidden md:block"></div>
-                <div className="md:text-left md:pl-8">
-                  <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                    Q4 2025
-                  </h3>
-                  <p className="text-gray-600">NFT Pets</p>
-                </div>
-              </div>
-
-              <div className="relative md:grid md:grid-cols-2 gap-8">
-                <div className="md:text-right md:pr-8">
-                  <h3 className="text-xl font-semibold text-purple-700 mb-2">
-                    Q1 2026
-                  </h3>
-                  <p className="text-gray-600">Open Banking Integration</p>
-                </div>
-                <div className="hidden md:block"></div>
-              </div>
-
-              <div className="relative md:grid md:grid-cols-2 gap-8">
-                <div className="hidden md:block"></div>
-                <div className="md:text-left md:pl-8">
-                  <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-                    Q2 2026
-                  </h3>
-                  <p className="text-gray-600">Scholarship Program Launch</p>
-                </div>
-              </div>
-            </div>
           </div>
         </motion.div>
       </section>
